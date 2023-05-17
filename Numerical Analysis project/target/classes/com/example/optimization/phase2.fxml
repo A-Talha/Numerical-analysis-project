@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<SplitPane dividerPositions="0.8610206297502715" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="496.0" prefWidth="897.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.optimization.phase2code">
+    <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="284.0" prefWidth="734.0">
+            <children>
+                <Label fx:id="welcomeText" alignment="CENTER" contentDisplay="CENTER" layoutX="210.0" layoutY="155.0" prefHeight="447.2" prefWidth="734.4" text="welcome to Phase 2" textAlignment="JUSTIFY" textFill="#3683c7" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <font>
+                        <Font name="Showcard Gothic" size="36.0" />
+                    </font>
+                </Label>
+                <VBox fx:id="page1" layoutX="-1.0" prefHeight="440.0" prefWidth="896.8" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="735.0">
+                            <children>
+                                <AnchorPane prefHeight="100.0" prefWidth="734.0">
+                                    <children>
+                                        <Label layoutX="14.0" layoutY="22.0" prefHeight="48.0" prefWidth="308.0" text="Choose Method:" textFill="#3683c7">
+                                            <font>
+                                                <Font name="Showcard Gothic" size="36.0" />
+                                            </font>
+                                        </Label>
+                                        <ChoiceBox fx:id="method" layoutX="329.0" layoutY="29.0" prefHeight="33.0" prefWidth="237.0" />
+                                    </children>
+                                </AnchorPane>
+                            </children>
+                        </HBox>
+                        <AnchorPane prefHeight="75.0" prefWidth="897.0">
+                            <children>
+                                <Label layoutX="14.0" layoutY="11.0" prefHeight="48.0" prefWidth="339.0" text="Enter precision:" textFill="#3683c7">
+                                    <font>
+                                        <Font name="Showcard Gothic" size="36.0" />
+                                    </font>
+                                </Label>
+                                <TextField fx:id="Tpre" layoutX="339.0" layoutY="19.0" prefHeight="40.0" prefWidth="218.0" />
+                            </children>
+
+                        </AnchorPane>
+                        <AnchorPane prefHeight="94.0" prefWidth="897.0">
+                            <children>
+                                <Label layoutX="14.0" layoutY="25.0" prefHeight="43.0" prefWidth="650.0" text="Do you want to solve with number of equations or epsilon?" textFill="#3683c7">
+                                    <font>
+                                        <Font name="Showcard Gothic" size="19.0" />
+                                    </font>
+                                </Label>
+                                <ChoiceBox fx:id="scale" layoutX="624.0" layoutY="30.0" prefHeight="34.0" prefWidth="191.0" />
+                            </children>
+                        </AnchorPane>
+
+                    </children>
+                </VBox>
+                <VBox fx:id="page2" layoutX="-1.0" prefHeight="440.0" prefWidth="896.8" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <AnchorPane prefHeight="81.0" prefWidth="897.0">
+                            <children>
+                                <Label layoutX="14.0" layoutY="17.0" prefHeight="48.0" prefWidth="497.0" text="Insert the parameter you want: " textFill="#3683c7">
+                                    <font>
+                                        <Font name="Showcard Gothic" size="24.0" />
+                                    </font>
+                                </Label>
+                                <TextField fx:id="parameter" layoutX="569.0" layoutY="26.0" prefHeight="34.0" prefWidth="200.0">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </TextField>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="58.0" prefWidth="897.0">
+                            <children>
+                            </children></AnchorPane>
+                        <AnchorPane prefHeight="75.0" prefWidth="897.0">
+                            <children>
+                                <Label fx:id="element" prefHeight="58.0" prefWidth="428.0" text="Insert the equation" textFill="#3683c7">
+                                    <font>
+                                        <Font name="Showcard Gothic" size="36.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="55.0" prefWidth="773.0">
+                            <children>
+                                <TextField fx:id="elements" prefHeight="34.0" prefWidth="296.0" />
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="75.0" prefWidth="897.0">
+                            <children>
+                                <Label fx:id="derivative" prefHeight="58.0" prefWidth="428.0" text="Insert the g(x)" textFill="#3683c7">
+                                    <font>
+                                        <Font name="Showcard Gothic" size="36.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="55.0" prefWidth="773.0">
+                            <children>
+                                <TextField fx:id="derivatives" prefHeight="34.0" prefWidth="296.0" />
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </VBox>
+                <VBox fx:id="pageiterate" prefHeight="440.0" prefWidth="896.8" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <AnchorPane prefHeight="101.0" prefWidth="734.0">
+                            <children>
+                                <Label layoutY="20.0" prefHeight="40.0" prefWidth="358.0" text="Enter the x0" textFill="#3683c7" fx:id="x0Label">
+                                    <font>
+                                        <Font name="Showcard Gothic" size="20.0" />
+                                    </font>
+                                </Label>
+                                <TextField layoutX="358.0" layoutY="20.0" prefHeight="40.0" prefWidth="200.0" fx:id="x0Text" />
+                                <Label layoutY="50.0" prefHeight="40.0" prefWidth="358.0" text="Enter the x1" textFill="#3683c7" fx:id="x1Label">
+                                    <font>
+                                        <Font name="Showcard Gothic" size="20.0" />
+                                    </font>
+                                </Label>
+                                <TextField layoutX="600.0" layoutY="20.0" prefHeight="40.0" prefWidth="200.0" fx:id="x1Text" />
+                            </children>
+                        </AnchorPane>
+
+
+                    </children></VBox>
+                <VBox fx:id="page3" prefHeight="440.0" prefWidth="896.8" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <AnchorPane prefHeight="106.0" prefWidth="663.0" />
+                        <AnchorPane>
+                            <children>
+                                <Label fx:id="answer1" layoutY="26.0" prefHeight="102.0" prefWidth="897.0" textFill="#3683c7" AnchorPane.bottomAnchor="18.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="26.0">
+                                    <font>
+                                        <Font name="SimSun" size="20.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane>
+                            <children>
+                                <Label fx:id="time" layoutX="15.0" prefHeight="62.0" prefWidth="883.0" textFill="#3683c7">
+                                    <font>
+                                        <Font name="SimSun" size="20.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </AnchorPane>
+                    </children></VBox>
+            </children></AnchorPane>
+        <AnchorPane maxHeight="48.0" maxWidth="-Infinity" minHeight="34.0" minWidth="752.0" prefHeight="48.0" prefWidth="752.0">
+            <children>
+                <Button fx:id="next" layoutX="644.0" mnemonicParsing="false" onAction="#next" prefHeight="48.0" prefWidth="82.0" text="next" textFill="#3683c7" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="25.599999999999994" AnchorPane.topAnchor="0.0">
+                    <font>
+                        <Font name="SimSun" size="20.0" />
+                    </font></Button>
+                <Button fx:id="back" layoutX="21.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="82.0" text="back" textFill="#3683c7" visible="false">
+                    <font>
+                        <Font name="SimSun" size="20.0" />
+                    </font></Button>
+            <Button layoutX="305.0" mnemonicParsing="false" onAction="#gotomenu" prefHeight="48.0" prefWidth="142.0" text="go to menu" textFill="#3683c7">
+               <font>
+                  <Font name="SimSun" size="20.0" />
+               </font>
+            </Button>
+            </children></AnchorPane>
+
+    </items>
+</SplitPane>
